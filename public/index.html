@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PUPPY AIR</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="font.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="img/logo.svg">
+      PUPPY AIR
+    </h1>
+    <h2>Infinite flihgt virtual airline</h2>
+  </header>
+  <section id="info">
+    <img src="img/info.svg">
+    <p>
+      PUPPY AIRはゲーム内の架空の航空会社であり、当サイトに記載されている内容は全て架空のものです。
+    </p>
+  </section>
+  <main>
+    <section id="greet">
+      <h1>ご挨拶</h1>
+      <p>PUPPY AIRは、「Infinite flight」というゲーム内の架空航空会社です。基本的に自由な社風です。</p>
+      <p>社員一同、この会社を、またInfinite Flightを盛り上げていきたいと考えております。</p>
+      <p>他架空航空会社様とも友好的な関係と持ちたいと考えておりますので、どうぞよろしくお願いいたします。</p>
+      <a href="https://twitter.com/PUPPYAirVA1" class="btn btn-large">
+        <img src="img/twitter.svg">
+        <span>公式Twitter</span>
+      </a>
+    </section>
+    <section id="airports" class="scroll-wrap">
+      <h1>就航空港</h1>
+      <div class="scroll">
+        <div v-for="airport in airports" class="scroll-el">
+          <img :src="'img/airports/' + airport.code + '.jpg'">
+          <p>{{airport.name}}</p>
+        </div>
+      </div>
+    </section>
+    <section id="airplanes" class="scroll-wrap">
+      <h1>使用機材</h1>
+      <div class="scroll">
+        <div v-for="airplane in airplanes" class="scroll-el">
+          <img :src="'img/airplanes/' + airplane + '.jpg'">
+          <p>{{airplane}}</p>
+        </div>
+      </div>
+    </section>
+    <section id="members" class="scroll-wrap">
+      <h1>社員</h1>
+      <div class="scroll">
+        <div v-for="member in members" class="scroll-el">
+          <img :src="'img/members/' + member.id + '.jpg'">
+          <p>{{member.name}}<span v-show="member.position">({{member.position}})</span></p>
+          <a :href="'https://twitter.com/' + member.id" class="btn">
+            <img src="img/twitter.svg">
+            <span>@{{member.id}}</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>入社申請</h1>
+      <p>入社希望の方は、以下の注意事項をお呼びの上、入社申請フォーム、もしくはTwitterのDMからご連絡ください。</p>
+      <ul>
+        <li>Infinite Flight Proを購入していること</li>
+        <li>Infinite Flight Passenger(¥300/月)を購入できること</li>
+        <li>各サーバーのルールを厳守すること（荒らしを確認次第登録抹消）</li>
+      </ul>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUmPkJMXI-l2cbiZOlMm0RbwRJizKYkmRbAIlkiz5bgL2aqw/viewform" class="btn btn-large btn-form">
+        <img src="img/form.svg">
+        <span>入社申請フォーム</span>
+      </a>
+      <a href="https://twitter.com/PUPPYAirVA1" class="btn btn-large">
+        <img src="img/twitter.svg">
+        <span>公式Twitter</span>
+      </a>
+    </section>
+  </main>
+  <footer>
+    (c)2020 PUPPY AIR
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

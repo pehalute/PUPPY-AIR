@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: source-han-sans-cjk-ja, sans-serif; 
+  font-weight: 500;
+  color: #606060
+}
+
+header,
+footer {
+  padding: 10px;
+  background-color: #0a111b;
+  background-image: url(img/bg.jpg);
+  background-position: bottom;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+h1 img {
+  width: 35px;
+  vertical-align: sub;
+}
+
+h2 {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: .8px;
+}
+
+#info {
+  display: flex;
+  justify-content: center;
+  border: solid #80DEEA;
+  border-width: 3px 0;
+  padding: 10px 20px;
+  box-shadow: 3px 0  6px rgba(0, 0, 0, .5);
+}
+
+#info img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+#info p {
+  margin: 0;
+  font-size: 12px;
+}
+
+main > section {
+  margin: 10px 0;
+}
+
+main section > h1 {
+  margin: 0 40px;
+  padding: 10px;
+  border-bottom: 1px solid #606060;
+  font-size: 18px;
+}
+
+main section.scroll-wrap h1::after {
+  content: "＊横にスライドできます";
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main section > p {
+  margin: 10px 50px;
+  line-height: 2;
+  font-size: 14px;
+}
+
+main section > p::first-letter {
+  margin-left: 12px;
+}
+
+.scroll {
+  display: flex;
+  margin: 20px 0 0;
+  overflow-x: scroll;
+}
+
+.scroll-el {
+  padding: 0 10px;
+}
+
+.scroll-el:first-of-type {
+  padding-left: 40px;
+}
+
+.scroll-el:last-of-type {
+  padding-right: 40px;
+}
+
+.scroll-el p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.scroll-el > img {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+}
+
+#airplanes .scroll-el img {
+  height: 80px;
+  object-fit: cover;
+}
+
+#members .scroll-el > img{
+  border-radius: 50%;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #00acee;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.btn img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.btn span {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.btn-large {
+  margin: 10px 40px;
+}
+
+.btn-form {
+  background: #FB8C00;
+}
+
+ul {
+  margin: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+footer {
+  margin-top: 20px;
+}
