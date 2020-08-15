@@ -30,6 +30,7 @@ header h1 img {
 }
 
 header h2 {
+  font-size: 15px;
   margin: 0;
   letter-spacing: .8px;
 }
@@ -107,8 +108,8 @@ main section > p::first-letter {
 .scroll-el > img {
   display: block;
   margin: 0 auto;
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
 }
 
 #airplanes .scroll-el img {
@@ -125,7 +126,7 @@ main section > p::first-letter {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 45px;
   background: #00acee;
   color: #fff;
   line-height: 20px;
@@ -133,11 +134,12 @@ main section > p::first-letter {
 }
 
 .btn img {
-  height: 20px;
+  height: 30px;
   margin-right: 10px;
 }
 
 .btn span {
+  margin-bottom: 3px;
   flex-grow: 1;
   text-align: center;
 }
@@ -161,12 +163,12 @@ footer {
 
 @media screen and (min-width: 1000px) {  
   body {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   main {
     width: 1000px;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 
   header,
@@ -202,7 +204,7 @@ footer {
   }
 
   .btn.btn-large {
-    padding: 30px 50px;
+    padding: 20px 50px;
     border-radius: 50px;
     margin: 20px 40px;
   }
@@ -217,7 +219,7 @@ footer {
   }
 
   .scroll-el > img {
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
   }
 }
