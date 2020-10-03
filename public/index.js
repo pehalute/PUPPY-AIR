@@ -27,8 +27,8 @@ const app = new Vue({
         name: "シャルル・ド・ゴール国際空港（パリ）",
         code: "LFPG"
       },{
-        name: "ペナン国際空港",
-        code: "PGUN"
+        name: "グアム国際空港",
+        code: "PGUM"
       },{
         name: "ダニエル・K・イノウエ国際空港 (ホノルル)",
         code: "PHNL"
@@ -121,7 +121,7 @@ const app = new Vue({
         code: "WSSS"
       }
     ],
-    airplanes: ["A318", "A320", "A321", "A359", "B738", "B742", "B748", "B772", "B77W", "B789", "Q400", "C172"],
+    airplanes: ["A318", "A320", "A321", "A359", "A359(Special Paint)", "B738", "B742", "B748", "B772", "B77W", "B789", "Q400", "C172"],
     members: [
       {
         name: "乱健",
@@ -132,7 +132,7 @@ const app = new Vue({
         position: "貨物部長",
         id: "freedomsky231",
       },{
-        name: "ふぃじーく",
+        name: "ふぃりっぷ",
         id: "Fizik_JPN",
       },{
         name: "みそぴー",
@@ -142,7 +142,7 @@ const app = new Vue({
         id: "murakami_taro1",
       },{
         name: "TAKAHIRO",
-        id: "DarekanoTo_JPN",
+        id: "DarekanoTomJPN",
       },{
         name: "RYUTO",
         id: "ryuto1246",
